@@ -86,6 +86,17 @@ class BST{
 				
 	}
 	
+	public void printPostOrder(Node root) {
+		// TODO Auto-generated method stub
+	    if(root!=null)
+	    {
+	    	printPostOrder(root.lchild);
+	    	printPostOrder(root.rchild);
+	    	System.out.print(root.value+" ");
+	    }
+				
+	}
+	
 }
 
 //Requirements

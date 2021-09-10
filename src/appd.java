@@ -32,6 +32,21 @@ public class appd {
         System.out.println("No value present");
         
         a.printInOrder(root);
+        
+        
+        String s = "07:05:45AM";
+        String[] split = s.split(":");
+        for(String temp:split)
+        	System.out.println(temp);
+       
+        StringBuilder sb = new StringBuilder(split[2]);
+        //sb.deleteCharAt(split[2].length()-1);
+        sb.delete(2, 4);
+        String string = sb.toString();
+        
+        int num = Integer.parseInt(split[0]);  
+        System.out.println(num);
+    	   
 	}
 	
 	
